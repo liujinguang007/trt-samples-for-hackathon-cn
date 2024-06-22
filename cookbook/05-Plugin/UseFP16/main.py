@@ -21,7 +21,7 @@ from pathlib import Path
 import numpy as np
 import tensorrt as trt
 
-sys.path.append("/trtcookbook/include")
+sys.path.append("../../include")
 from utils import TRTWrapperV1, check_array
 
 scalar = 1.0
