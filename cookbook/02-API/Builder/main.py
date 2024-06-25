@@ -43,7 +43,7 @@ print("builder.max_DLA_batch_size = %d" % builder.max_DLA_batch_size)
 print("\nEngine build part =====================================================")
 print("builder.logger = %s" % builder.logger)
 print("builder.is_network_supported() = %s" % builder.is_network_supported(network, config))
-print("builder.get_plugin_registry().plugin_creator_list =", builder.get_plugin_registry().plugin_creator_list)
+# print("builder.get_plugin_registry().plugin_creator_list =", builder.get_plugin_registry().plugin_creator_list())
 builder.max_threads = 16  # The maximum thread that can be used by the Builder
 #builder.max_batch_size = 8 # use in Implicit Batch Mode, deprecated since TensorRT 8.4, use Dynamic Shape Mode instead
 #builder.max_workspace_size = 1 << 30  # deprecated since TensorRT 8.4, use BuilderConfig.set_memory_pool_limit instead

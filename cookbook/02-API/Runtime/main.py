@@ -73,6 +73,9 @@ tempfile_control_flags = trt.TempfileControlFlag.ALLOW_IN_MEMORY_FILES
 temporary_directory = "."
 
 engine = runtime.deserialize_cuda_engine(engineString)
+
+print("runtime.__sizeof__() = %d" % runtime.__sizeof__())
+print("runtime.__str__() = %s" % runtime.__str__())
 """
 Member of IExecutionContext:
 ++++        shown above

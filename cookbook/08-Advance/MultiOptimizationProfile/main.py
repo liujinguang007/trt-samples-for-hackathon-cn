@@ -69,6 +69,7 @@ for index in range(nProfile):
     shape = (np.array(shapeSmall) * (index + 1)).tolist()
     context.set_input_shape(lTensorName[0], shape)
     context.set_input_shape(lTensorName[1], shape)
+    print("context binding all? %s" % ("Yes" if context.all_binding_shapes_specified else "No"))
     for i in range(nIO):
         print("[%2d]%s->" % (i, "Input " if i < nInput else "Output"), engine.get_tensor_dtype(lTensorName[i]), engine.get_tensor_shape(lTensorName[i]), context.get_tensor_shape(lTensorName[i]), lTensorName[i])
 

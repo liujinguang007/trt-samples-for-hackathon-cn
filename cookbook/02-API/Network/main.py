@@ -62,7 +62,7 @@ for i in range(network.num_layers):
     print("\tnetwork.get_layer(%d) = %s" % (i, network.get_layer(i)))
     #print("\tnetwork.__getitem__(%d) = %s" % (i, network.__getitem__(i)))  # same as get_layer()
 
-print("netwrok.has_explicit_precision = %s" % network.has_explicit_precision)
+#print("netwrok.has_explicit_precision = %s" % network.has_explicit_precision)
 print("netwrok.has_implicit_batch_dimension = %s" % network.has_implicit_batch_dimension)
 """
 Member of INetwork:

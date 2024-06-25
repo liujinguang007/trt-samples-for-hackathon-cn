@@ -43,7 +43,7 @@ engineString = builder.build_serialized_network(network, config)
 
 engine = trt.Runtime(logger).deserialize_cuda_engine(engineString)
 
-print("engine.__len__() = %d" % len(engine))
+# print("engine.__len__() = %d" % len(engine))
 print("engine.__sizeof__() = %d" % engine.__sizeof__())
 print("engine.__str__() = %s" % engine.__str__())
 
